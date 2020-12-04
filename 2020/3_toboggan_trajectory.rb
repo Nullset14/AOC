@@ -14,7 +14,6 @@ def traverse(right, down, geology)
   trees
 end
 
-
 geology = input.split("\n").map(&:chars)
 
 puts traverse(3, 1, geology)
