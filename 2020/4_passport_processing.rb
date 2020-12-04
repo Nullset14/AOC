@@ -11,8 +11,8 @@ input.split("\n\n").each do |passport|
   next unless ("1920".."2002").cover? credentials["byr"]
   next unless ("2010".."2020").cover? credentials["iyr"]
   next unless ("2020".."2030").cover? credentials["eyr"]
+  
   next unless credentials["hgt"]
-
   case credentials["hgt"][-2..-1]
   when "cm"
     next unless ("150".."193").cover? credentials["hgt"][0..-3]
