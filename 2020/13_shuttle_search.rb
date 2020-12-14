@@ -1,5 +1,4 @@
 # Part 1
-
 earliest_time, bus_ids = input.split("\n")
 earliest_time = earliest_time.to_i
 bus_ids = bus_ids.split(",").reject { |id| id == "x" }.map(&:to_i)
@@ -10,7 +9,6 @@ puts time * bus_ids[index]
 
 
 # Part 2
-
 def inverse_modulo(multiplier, divisor)
   multiplier = multiplier % divisor
   number = multiplier
